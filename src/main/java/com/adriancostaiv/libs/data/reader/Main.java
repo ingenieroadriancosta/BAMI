@@ -7,7 +7,7 @@ public class Main {
     static final ILogger logger = ILogger.getLogger();
     public static void main(String[] args)  {
         try {
-            Writer.writeString("baloto.csv", BalReader.getAllDatas());
+            Writer.writeString("target/baloto.csv", BalReader.getAllDatas());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
