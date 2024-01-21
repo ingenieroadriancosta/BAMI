@@ -35,12 +35,13 @@ public class BalReader {
         return bdto;
     }
 
-    public static String getAllDatas() throws IOException {
+    public static String getAllDatas(String url) throws IOException {
         String output = "";
         BalDTO bdto;
         for(int i=AllUrl.BALI;i>-1;i++){
-            logger.info("Reading - " + (AllUrl.BAL+i) );
-            bdto = getDataFromUrl(AllUrl.BAL+i);
+            String urlC = url+i;
+            logger.info("Reading - " + urlC );
+            bdto = getDataFromUrl(urlC);
             if(bdto.isEmpty()){
                 break;
             }
@@ -48,4 +49,13 @@ public class BalReader {
         }
         return output;
     }
+
+    public static String getAllDatasBal() throws IOException {
+        return getAllDatas(AllUrl.BAL);
+    }
+
+    public static String getAllDatasRev() throws IOException {
+        return getAllDatas(AllUrl.REV);
+    }
+
 }

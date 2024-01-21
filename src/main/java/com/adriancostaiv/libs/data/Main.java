@@ -9,7 +9,8 @@ public class Main {
     static final ILogger logger = ILogger.getLogger();
     public static void main(String[] args)  {
         try {
-            Writer.writeString("target/" + AllUrl.BALNAME, BalReader.getAllDatas());
+            Writer.writeString("target/" + AllUrl.BALNAME, BalReader.getAllDatasBal());
+            Writer.writeString("target/" + AllUrl.REVNAME, BalReader.getAllDatasRev());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

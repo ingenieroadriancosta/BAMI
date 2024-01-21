@@ -112,6 +112,6 @@ public class BalDTO {
             bal3 + "," +
             bal4 + "," +
             bal5 + "," +
-            sbal + ",\r\n";
+            sbal + "\r\n";
     }
 }

@@ -10,8 +10,7 @@ public class AllUrl {
     public static final String LINERED= "red-ball";
 
 
-
-    public static final int REVI = 2081;
+    public static final String REVNAME = "revancha.csv";
     public static final String REV = "https://baloto.com/resultados-revancha/";
 
 
